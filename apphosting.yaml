@@ -1,0 +1,8 @@
+# Firebase App Hosting の設定
+# フロントをビルドし、API サーバー（server/）がビルド済みフロントと /api をまとめて配信する
+scripts:
+  buildCommand: npm run build && npm ci --prefix server --include=dev
+  runCommand: npm --prefix server start
+
+runConfig:
+  minInstances: 0

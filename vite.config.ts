@@ -6,6 +6,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
+    port: 8080,
     // AI旅プランのAPIサーバー（../server）へ転送する
     proxy: {
       '/api': 'http://localhost:8787',
